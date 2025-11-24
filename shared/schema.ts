@@ -13,3 +13,15 @@ export interface CalculationResult {
   cycleStartIndex: number;
   cycleLength: number;
 }
+
+export interface HistoryEntry {
+  id: string;
+  inputNumber: number;
+  timestamp: number;
+  result: CalculationResult;
+}
+
+export interface MultiCalculationResult {
+  inputNumber: number;
+  result: CalculationResult;
+}
